@@ -1,0 +1,34 @@
+ <!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+	<script src="Flight.js"></script>   
+</head>
+
+<body onload="setAllListOfAirports('selectToAirport')">
+
+<div>
+    Flying to<br>
+    <input type="text" name="toCity" id="toCity" placeholder="To City" onchange="setAirports('selectFromAirport', document.getElementById('toCity').value)" ><br>
+</div>
+
+<div> Destination Airport<br>
+    <select  id="selectToAirport" name="selectedToAirport" placeholder="Choose an airport">
+        <!--
+            
+        -->
+    </select>
+</div>
+
+<div> From Airport<br>
+<select id="selectFromAirport" name="selectedFromAirport" placeholder="Choose an airport" onchange = "setAllListOfAirports('selectToAirport')"  >  
+  <option>Don Mueang</option>
+  <option>Suvannabhum</option>
+  <option>CDG</option>
+  <option>Narita</option>
+  <option>Haneda</option>
+</select>
+</div>
+
+</body>
+</html> 
